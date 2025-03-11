@@ -439,9 +439,6 @@ label {
 	width: 100%;
 }
 
-.main-menu ul li a.active::before {
-	width: 100%;
-}
 
 .main-menu ul li a {
 	display: block;

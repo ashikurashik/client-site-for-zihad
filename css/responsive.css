@@ -224,16 +224,19 @@
 
 @media (max-width: 767px) {
 
+.header-logo img {
+	width: 50% !important;
+}	
 .header-area {
 
 	padding: 5px 15px;
 
-	padding-bottom: 5px;
-
-	padding-top: 15px;
-
 }
-
+.newsfeed-content h3 {
+	font-size: 18px;
+	color: #000a2d;
+	text-align: justify;
+}
 .header-right {
 
 	margin-top: 7px;
@@ -241,7 +244,15 @@
 	margin-right: 61px;
 
 }
-
+.bar {
+	top: 450px !important;
+}
+.mobile-mar {
+	margin-top: -205px !important;
+}
+#blog {
+	padding-top: 10px;
+}
 .single-slider {
 
 	min-height: 600px;

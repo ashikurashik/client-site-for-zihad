@@ -25,7 +25,39 @@
         <link rel="stylesheet" href="css/responsive.css">
         <link href="https://kit-pro.fontawesome.com/releases/v5.15.3/css/pro.min.css" rel="stylesheet">
 
-        
+        <style>
+            .sidenav {
+                height: 100%;
+                width: 0;
+                position: fixed;
+                z-index: 99999;
+                top: 5px;
+                right: 0;
+                background-color: #fff;
+                overflow-x: hidden;
+                transition: 0.5s;
+                padding-top: 0;
+                border-top: 1px solid red;
+            }
+            .learn-bar {
+                cursor: pointer;
+                position: absolute;
+                left: 24px;
+                top: 116.5%;
+                font-weight: 800;
+                z-index: 9999;
+                height: 60px;
+                width: 143px;
+                font-size: 14px;
+                background: #fff7fa;
+                border-radius: 10px;
+                color: #ff3d4f;
+                text-align: center;
+                line-height: 50px;
+                transition: .5s;
+                box-shadow: 0px 8px 16px 0px rgb( 255, 194, 200 );
+            }
+        </style>
     </head>
     <body>
 
@@ -156,15 +188,8 @@
                             <div class="row">
                                 <div class="col-xl-7 col-lg-9 col-md-12">
                                     <div class="slider-content">
-                                        <span style="font-weight: bold;">Complete Solution to Every Problem.</span>
-                                        <h2>I’m Zihad</h2>
-                                        <p> 
-                                            I am a Web Analytics Expert. <br>I am an experienced Web Analytics Expert, specializing in Google Analytics, Facebook Pixel, Server-Side Tracking, and Digital Marketing Data Analysis. I analyze your website traffic, user behavior, and ad performance to ensure data-driven decision-making and increased ROI.
-                                            </p>
-                                        <div class="slider-btn">
-                                            <a href="learn.html" target="_blank" class="btn">Learn More</a>
-                                           
-                                        </div>
+                                        <span>Optimization is the key to success,
+                                            In the light of data, a new future is built.</span>
                                     </div>
                                 </div>
                             </div>
@@ -182,22 +207,46 @@
             <section id="about" class="pt-120">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xl-6 col-lg-6">
+                        <div class="col-xl-12 col-lg-12">
                             <div class="section-header">
                                 <span>About Me</span>
-                                <h2>Optimization is the key to success,
-                                    In the light of data, a new future is built.
-                                    </h2>
+                                <h2>I am a "Web Analytics & Conversion Tracking Specialist" with expertise in "GA4, Google Tag Manager, Facebook Pixel, and Server-Side Tracking". My passion lies in helping businesses collect accurate data, track user behavior, and optimize their digital marketing strategies for maximum performance.  
+                                </h2>
+                                <div class="header-bar f-right ">
+                                    <button class="learn-bar margin-top-1 mobile-mar" onclick="openNav()">Learn More</button>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-xl-6 col-lg-6">
-                            <div class="about-right">
-                                <p>I am a web analytics expert, helping businesses understand user behavior, improve website performance, and make data-driven decisions. I lead analytics teams and specialize in tracking, conversion rate optimization, and audience segmentation, all of which contribute to enhancing digital strategies. Extracting insights from data, improving user experience, and driving analytics-based growth are at the core of my work.
-
-                                    From data collection to visualization and performance improvement, the entire process inspires me every day.
+                            
+                            <div id="mySidenav5" class="sidenav mt-100">
+                                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                                <div class="logo-side mb-30">
+                                    <a href="index.html">
+                                        <img src="img/logo/footer-logo.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="container">
+                                    <div class="row">
                                     
-                                    Since 2023, I have been developing web analytics frameworks and tools, allowing me to gain deeper insights into data trends and optimization strategies. My most recognized work includes custom tracking solutions and website tracking, which help businesses worldwide enhance their online performance.
-                                </p>
+                                        <div class="col-xl-12">
+                                            <div class="content-blog">
+                                                <p><strong style="color: red;">GA4: </strong><br>
+                                                    I Provide deep insights into user interactions and website traffic.</p> 
+
+                                                <p><strong style="color: red;">Google Tag Manager (GTM): </strong><br>
+                                                    I Enables me to streamline tag implementation and improve data accuracy without extensive coding. </p> 
+
+                                                <p><strong style="color: red;">Facebook Pixel: </strong><br>
+                                                    Helps me enhance ad targeting, track conversions, and optimize retargeting strategies. Meanwhile. </p> 
+
+                                                <p><strong style="color: red;">Server-Side Tracking: </strong><br>
+                                                    Ensures better data control, enhanced privacy compliance, and improved conversion attribution. </p> 
+
+                                            <strong style="color: blue;">I believe that accurate tracking and data-driven decisions are the keys to business growth. By implementing custom tracking solutions, I help businesses **maximize their ROI, improve ad performance, and gain a competitive edge in the digital landscape.</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -274,7 +323,7 @@
                         <div class="col-xl-4 col-lg-4 col-md-6">
                             <div class="services-body mb-30">
                                 <div class="service-img">
-                                    <img src="img/service-icon/snapshot.jpg" alt="">
+                                    <img src="img/service-icon/google-ana.png" alt="">
                                 </div>
                                 <div class="services-content">
                                     <h4>GOOGLE ANALYTICS 4 (GA4) 🔥 </h4>
@@ -795,6 +844,14 @@
             function closeNav() {
               document.getElementById("mySidenav").style.width = "0";
             }
+            
+            function openNav() {
+                  document.getElementById("mySidenav5").style.width = "100%";
+                }
+                
+                function closeNav() {
+                  document.getElementById("mySidenav5").style.width = "0";
+                }
         </script>
               
  

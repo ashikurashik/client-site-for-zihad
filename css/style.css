@@ -526,7 +526,7 @@ label {
 .slider-thumb {
 	position: absolute;
 	right: -112px;
-	bottom: -197px;
+	bottom: -300px;
 }
 .slider-learn p {
 	font-size: 20px;
@@ -1797,7 +1797,9 @@ z-index: 1;
 .bar:hover .btn-menu-main-right {
 	transform: translateX(0px);
 }
-
+.main-menu{
+	text-align: center;
+}
 
 .sidenav {
 	height: 100%;
